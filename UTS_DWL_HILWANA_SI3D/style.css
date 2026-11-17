@@ -1,0 +1,384 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5fb;
+    color: #183454;
+}
+
+/* HEADER */
+.header {
+    background: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h2 {
+    color: #0757b7;
+}
+
+.header span {
+    color: #173d70;
+}
+
+.header input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+/* NAV */
+.sidebar {
+    width: 210px;
+    background: #0757b7;
+    padding: 20px 12px;
+    border-radius: 10px;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+/* HOVER NAV */
+.nav-link:hover {
+    background: #dceaff;
+    color: #0757b7;
+    transform: translateX(5px);
+}
+
+.nav-link.active {
+    background: #174579;
+}
+
+.signout {
+    margin-top: auto;
+}
+
+/* MAIN */
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* WELCOME */
+.welcome {
+    background: linear-gradient(120deg, #0757b7, #123e78);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.welcome h3 {
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.avatar {
+    font-size: 45px;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* GRID */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card h3 {
+    margin-bottom: 20px;
+}
+
+/* HOVER SECTION 1, SECTION 2, ASIDE */
+.section1:hover,
+.section2:hover,
+.aside:hover,
+.documents:hover {
+    background: #e2efff;
+    border: 1px solid #7eb7f5;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(7,87,183,0.15);
+}
+
+/* CHART */
+.chart {
+    height: 220px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.bar {
+    width: 35px;
+    background: #0757b7;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    transition: 0.3s;
+}
+
+.bar:hover {
+    background: #55a5ff;
+    transform: scaleX(1.15);
+}
+
+.bar span {
+    position: absolute;
+    top: -20px;
+    font-size: 10px;
+    left: 0;
+}
+
+.bar small {
+    position: absolute;
+    bottom: -20px;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.average {
+    margin-top: 35px;
+    font-weight: bold;
+    color: #0757b7;
+}
+
+/* PROGRES KELAS */
+.course {
+    background: #f0f5fc;
+    padding: 13px;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.course:hover {
+    background: #cfe3ff;
+}
+
+.course h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.course p {
+    color: #67809f;
+    font-size: 11px;
+}
+
+.course span {
+    display: block;
+    text-align: right;
+    color: #0757b7;
+    font-weight: bold;
+}
+
+/* ASIDE */
+.activity {
+    background: #f0f5fc;
+    padding: 13px;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.activity:hover {
+    background: #cfe3ff;
+}
+
+.activity h4 {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.activity p {
+    font-size: 10px;
+    color: #67809f;
+}
+
+/* DOKUMEN */
+.documents {
+    margin-top: 20px;
+}
+
+.document {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0f5fc;
+    padding: 14px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.document p {
+    font-size: 12px;
+}
+
+.document a {
+    color: #0757b7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.document a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #8292a8;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .aside {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .aside {
+        grid-column: auto;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .header input {
+        width: 100%;
+    }
+
+    .welcome h1 {
+        font-size: 18px;
+    }
+
+    .document {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+/* FOTO MAHASISWA */
+.avatar {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    background: transparent;
+    flex-shrink: 0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+/* GAMBAR STATISTIK */
+.statistik {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.statistik img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+/* WARNA SAAT MENU DIKLIK */
+.card.highlight {
+    background-color: #dceaff;
+    border: 2px solid #0757b7;
+    box-shadow: 0 5px 15px rgba(7, 87, 183, 0.2);
+    transition: 0.3s;
+}
+
+/* Efek hover tetap aktif */
+.card:hover {
+    background-color: #e2efff;
+    border-color: #7eb7f5;
+}
